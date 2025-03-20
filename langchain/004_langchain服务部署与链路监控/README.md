@@ -70,7 +70,7 @@ poetry run langchain serve --port 8090
 在 Linux上：打开终端, 编辑你的 shell 配置文件（例如 `~/.bashrc`）, 在文件末尾添加以下行：保存文件并退出编辑器。
 
 ```bash
-export TAVILY_API_KEY="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"
+export TAVILY_API_KEY="<your-tavily-api-key>"
 ```
 
 运行以下命令使更改生效：
