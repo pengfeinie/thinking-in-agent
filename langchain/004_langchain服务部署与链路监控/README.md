@@ -44,7 +44,9 @@ poetry add langchain-openai==0.3.8
 poetry add langsmith==0.3.15
 ```
 
-## 2. 服务运行
+## 2. 主要内容
+
+### 2.1 LangServe服务部署
 
 ```bash
 poetry run langchain serve --port 8090 
@@ -57,6 +59,30 @@ poetry run langchain serve --port 8090
 
 ![](images/2025-03-20_150557.png)
 
+### 2.2 LangSmith Tracing 跟踪
+
 最后我们在langsmith上查看链路监控:
 
 ![](images/2025-03-20_151215.png)
+
+### 2.3 Verbose & Debug 详细日志打印
+
+在 Linux上：打开终端, 编辑你的 shell 配置文件（例如 `~/.bashrc`）, 在文件末尾添加以下行：保存文件并退出编辑器。
+
+```bash
+export TAVILY_API_KEY="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"
+```
+
+运行以下命令使更改生效：
+
+```bash
+source ~/.bashrc
+```
+
+参考debug_verbose的代码。
+
+## **3. 参考：**
+
+1. LangSmith官网： [https://smith.langchain.com]( https://smith.langchain.com)
+2. tavily官网: [https://tavily.com](https://tavily.com)
+
