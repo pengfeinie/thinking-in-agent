@@ -40,6 +40,8 @@ LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
 OPENAI_API_KEY="<your-openai-api-key>"
 ```
 
+![](images/2025-03-25_172913.png)
+
 ### 1.2 LangServe服务部署
 
 ```bash
@@ -61,16 +63,10 @@ poetry run langchain serve --port 8090
 
 ### 1.4 Verbose & Debug 详细日志打印
 
-在 Linux上：打开终端, 编辑你的 shell 配置文件（例如 `~/.bashrc`）, 在文件末尾添加以下行：保存文件并退出编辑器。
+ 在.env文件中加入如下内容:
 
 ```bash
-export TAVILY_API_KEY="<your-tavily-api-key>"
-```
-
-运行以下命令使更改生效：
-
-```bash
-source ~/.bashrc
+TAVILY_API_KEY="<your-tavily-api-key>"
 ```
 
 参考debug_verbose的代码。
