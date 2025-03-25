@@ -84,5 +84,8 @@ pip install langchain-openai==0.3.8
 ## pip install langchain-cli==0.0.36
 
 ## pip install "langserve[all]"
+
+## pip index versions python-dotenv
+pip install python-dotenv==1.0.1
 ```
 
