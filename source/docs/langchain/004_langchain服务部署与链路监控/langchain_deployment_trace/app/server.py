@@ -16,17 +16,23 @@ from pydantic import BaseModel
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferMemory
 from langchain_openai import OpenAI
+from dotenv import load_dotenv
+
+# load .env parameters
+load_dotenv()
+
 
 # 从环境变量中获取 API 密钥
 openai_api_key = os.getenv("OPENAI_API_KEY")
+
 # 启用LangChain追踪
-os.environ["LANGSMITH_TRACING"] = "true"
+os.environ["LANGSMITH_TRACING"] = os.getenv("LANGSMITH_TRACING")
 # 设置LangChain API密钥
-os.environ["LANGCHAIN_API_KEY"] = "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"
+os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGSMITH_API_KEY")
 # 这里输入在langsmith中创建的项目的名字
-os.environ["LANGCHAIN_PROJECT"] = "default"
+os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGCHAIN_PROJECT")
 # 设置LangChain API端点地址
-os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
+os.environ["LANGCHAIN_ENDPOINT"] = os.getenv("LANGCHAIN_ENDPOINT")
 
 # 初始化 ChatOpenAI 实例
 chat = ChatOpenAI(
