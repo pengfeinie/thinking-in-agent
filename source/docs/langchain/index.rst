@@ -1,13 +1,8 @@
-.. thinking-in-langchain documentation master file, created by
-   sphinx-quickstart on Tue Mar 25 09:54:52 2025.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 langchain
 =================================================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 4
    :caption: Contents:
 
    000_langchain开发环境准备/index
@@ -20,12 +15,3 @@ langchain
    007_langchain自定义工具调用/index
    008_langchain开发Agent智能体/index
    009_langchain基于RAG实现文档问答/index
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

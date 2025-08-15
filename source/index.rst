@@ -11,6 +11,7 @@
    :caption: Contents:
 
    docs/langchain/index
+   docs/langgraph/index
 
 
 
