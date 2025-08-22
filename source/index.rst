@@ -12,6 +12,7 @@
 
    docs/langchain/index
    docs/langgraph/index
+   docs/mcp/index
 
 
 
