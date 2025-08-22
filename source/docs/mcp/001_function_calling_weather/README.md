@@ -1,8 +1,8 @@
-# 01_function_calling_weather - 智能天气查询程序
+# 智能天气查询程序
 
 ## 项目概述
 
-01_function_calling_weather 是一个基于 DeepSeek API 和 OpenWeather API 的智能天气查询程序。它使用函数调用功能，能够智能识别用户关于天气的查询，并自动调用 OpenWeather API 获取实时天气信息。
+function_calling_weather 是一个基于 DeepSeek API 和 OpenWeather API 的智能天气查询程序。它使用函数调用功能，能够智能识别用户关于天气的查询，并自动调用 OpenWeather API 获取实时天气信息。
 
 ## 功能特点
 
