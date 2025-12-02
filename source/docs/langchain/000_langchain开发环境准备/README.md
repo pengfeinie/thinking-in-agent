@@ -84,9 +84,7 @@ conda activate first-agent-python3.10.2
 
 ​        但是，伴随着GPT-3.5模型的发布，对话模型正式登上历史的舞台，并逐渐成为主流。而得益于对话模型更强的指令跟随能力，很多GPT-3需要借助LangChain才能完成的工作，已经成为GPT-3.5原生自带的一些功能。而等到GPT-4逐渐普及，包括调用外部工具（Function calling）、结构化输出、系统提示词等功能，都成了模型的基础功能。而对于开发者而言，此时再使用LangChain再对这些功能进行封装就显得多此一举。
 
- 		因此在2023年下半年起的很长一段时间里，LangChain饱受争议，很多开发者觉得LangChain代码冗余、编写复杂，甚至有开发者觉得LangChain太过于复杂，一个模型调用的过程就涉及到数十个类，一个项目开发动辄就要用到几十个不同的类，而说明文档更是几百个不同的常用类需要记住，其复杂程度不亚于学习一门全新的编程语言。而这也使得在某个时间段，LangChain的开发者大规模流失。
-
-> 举个例子，为了更好的兼容不同模型的调用，谷歌ADK采用了LiteLlm作为底层模型调度框架，一个库即可调用各类模型，而LangChain则为每个主流模型单独封装了一个库，调用不同模型的时候需要导入不同模型对应的库，例如调用DeepSeek就需要安装`langchain-deepseek`，而调用Gemini则需要安装`langchain-google-genai`。
+举个例子，为了更好的兼容不同模型的调用，谷歌ADK采用了LiteLlm作为底层模型调度框架，一个库即可调用各类模型，而LangChain则为每个主流模型单独封装了一个库，调用不同模型的时候需要导入不同模型对应的库，例如调用DeepSeek就需要安装`langchain-deepseek`，而调用Gemini则需要安装`langchain-google-genai`。
 
 ### 3.2 更加适用于当前Agent开发的LangChain工具生态
 
@@ -100,4 +98,3 @@ conda activate first-agent-python3.10.2
 pip index versions langchain #查询当前有哪些版本可以使用
 pip install langchain==1.0.3 #安装特定的版本
 ```
-
